@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Post form</h2>
+    <form action="/subscribe/" method="POST">
+        {{ form.name.label }}
+        {{ form.name }}
+        {{ form.email.label }}
+        {{ form.email }}
+        {{ form.submit.label }}
+        {{ form.submit }}
+    </form>
+{% endblock %}

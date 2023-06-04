@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Get form</h2>
+    <form action="/getsearch/" method="GET">
+        <input type="email" name="mail" placeholder="Почта">
+        <input type="submit" value="Подписаться">
+    </form>
+    <h2>Post form</h2>
+    <form action="/postsearch/" method="POST">
+        <input type="email" name="mail" placeholder="Почта">
+        <input type="submit" value="Подписаться">
+    </form>
+{% endblock %}
